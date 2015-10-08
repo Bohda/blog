@@ -1,10 +1,19 @@
 <?php
+
  //echo "Hello world";
  //echo time ();
 
-$a = $_GET('a');
-$b = S_GET('b');
+  function add($param1, $param2){ 
+      return $param1 + $param2;  
+   } 
 
-echo "a+b=".($a+$b);
+  $a = $_GET['a'];
+  $b = $_GET['b'];
+
+  echo "a+b=".($a+$b);
     
+  echo add($a, $b);
+  echo "<br>";
+  for($i=0;$i<10;$i++){
+      echo $i."<br>";}
 ?>
